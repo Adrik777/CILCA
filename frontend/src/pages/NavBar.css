@@ -6,6 +6,9 @@
     padding: 1rem 2rem;
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Hace que el navbar se mantenga fijo */
+    top: 0; /* Asegura que esté en la parte superior de la pantalla */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
 }
 
 /* Logo y texto */
@@ -22,7 +25,7 @@
 }
 
 .nav-logo-text {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
     color: #C026D3; /* Color similar al fucsia */
     text-decoration: none; /* Quitar subrayado */
@@ -31,14 +34,14 @@
 /* Links de navegación */
 .nav-links {
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .nav-item, .nav-signin {
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
-    color: #374151; /* Gris oscuro */
+    color: #000000; /* Gris oscuro */
     transition: color 0.3s;
 }
 
@@ -46,7 +49,6 @@
     color: #C026D3; /* Color más oscuro en hover */
 }
 
-/* Hover con sombra */
 .nav-signin:hover {
-    color: #eeca00; /* Color más oscuro en hover */
+    color: #f8bd3f;
 }
