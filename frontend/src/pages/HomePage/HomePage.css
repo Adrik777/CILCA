@@ -71,13 +71,15 @@
 }
 
 .hero-button.secondary-button {
-    border: 1px solid #dd1d1d88;
-    background-color: #dd1d1d77;
+    border: 1px solid #f8bb1f90;
+    background-color: #f8bb1f26;
 }
+
 .hero-button.secondary-button:hover {
-    border: 1px solid #dd1d1d88;
-    background-color: #dd1d1db6;
+    border: 1px solid #f8bb1f;
+    background-color: #f8bb1fae;
 }
+
   
 
 /* .hero-button:hover {
@@ -127,7 +129,7 @@
         color: #ff6e6e
     }
     100% {
-        color: #e003dd
+        color: #9d1d7c
     }
 }
 
@@ -170,11 +172,11 @@
 }
   
 :root {
-    --purple-primary:  #bf0bbc;
-    --blue-primary: #33a5da;
-    --yellow-primary: #FFA202;
+    --purple-primary: #9d1d7c;
+    --blue-primary: #1e8ec5;
+    --yellow-primary: #f8c61f;
     --green-primary: #68A23B;
-    --orange-primary: #FFA500;
+    --orange-primary: #f8bb1f;
     --red-primary: #dd1d1d;
     --text-gray: #333333;
 }

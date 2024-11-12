@@ -27,7 +27,7 @@
 .nav-logo-text {
     font-size: 1.7rem;
     font-weight: bold;
-    color: #C026D3; /* Color similar al fucsia */
+    color: #9d1d7c; /* Color similar al fucsia */
     text-decoration: none; /* Quitar subrayado */
 }
 
@@ -46,7 +46,7 @@
 }
 
 .nav-item:hover {
-    color: #C026D3; /* Color más oscuro en hover */
+    color: #c6259e; /* Color más oscuro en hover */
 }
 
 .nav-signin:hover {

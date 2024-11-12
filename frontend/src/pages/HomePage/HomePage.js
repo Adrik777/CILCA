@@ -14,7 +14,7 @@ const Hero = () => {
     <>
     <header className="hero">
       <div className="hero-content">
-        <h1>Membresía holística</h1>
+        <h1>Membresía Holística</h1>
         <p>Desarrolla al máximo tu potencial</p>
         <div className="hero-buttons">
           <a onClick={scrollToBottom} href="#bottom-section" className="hero-button">
@@ -60,7 +60,7 @@ const Section = () => {
   ];
 
   // Array de colores para las tarjetas
-  const colors = ["purple", "blue", "green", "orange", "red"];
+  const colors = ["purple", "blue", "green", "orange", "blue"];
 
   return (
     <div className="Programa-wrapper">
