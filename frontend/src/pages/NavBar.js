@@ -1,4 +1,5 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import "./NavBar.css"; // Importa el archivo CSS
 import HomePage from "./HomePage/HomePage.js";
 import Cursos from "./Cursos/Cursos.js";
@@ -6,8 +7,17 @@ import Beca from "./Beca/Beca.js";
 import Contacto from "./Contacto/Contacto.js";
 import Equipo from "./Equipo/Equipo.js";
 import Membresia from "./Membresia/Membresia.js";
+import Privacidad from "./Footer/Footer Pages/Privacidad.js";
+import Condiciones from "./Footer/Footer Pages/Condiciones.js";
 
 function NavBar() {
+  const location = useLocation();
+
+  // Ejecuta scroll hacia arriba en cada cambio de ruta
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <div> 
       <nav className="navbar">
@@ -35,7 +45,7 @@ function NavBar() {
 
       </nav>
 
-      {/* Routes */}
+      {/* De aquí para abajo son las rutas de toda la página*/}
       <Routes> 
         <Route path="/" element={<HomePage />} />
         <Route path="/cursos" element={<Cursos />} />
@@ -43,6 +53,10 @@ function NavBar() {
         <Route path="/equipo" element={<Equipo />} />
         <Route path="/beca" element={<Beca />} />
         <Route path="/contacto" element={<Contacto />} />
+        
+        {/*Footer*/}
+        <Route path="/privacy-policy" element={<Privacidad />} />
+        <Route path="/terms" element={<Condiciones />} />
       </Routes>
     </div>
   );

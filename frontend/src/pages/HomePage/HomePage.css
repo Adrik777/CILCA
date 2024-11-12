@@ -160,6 +160,10 @@
 .wave-text span:nth-child(27) { animation-delay: 2.15s; }
 /* Agrega más retrasos a medida que necesites */
 
+.Programa h1 {
+    color: #a0007e;
+}
+
   
 .Programa p {
     font-size: 1.1rem;
@@ -172,7 +176,7 @@
 }
   
 :root {
-    --purple-primary: #9d1d7c;
+    --purple-primary: #a0007e;
     --blue-primary: #1e8ec5;
     --yellow-primary: #f8c61f;
     --green-primary: #68A23B;
@@ -247,3 +251,103 @@
 .icon-box.green + .icon-label { border-color: var(--green-primary); }
 .icon-box.orange + .icon-label { border-color: var(--orange-primary); }
 .icon-box.red + .icon-label { border-color: var(--red-primary); }
+
+/*-------------------------------------------------------------------------------------------------*/
+
+/* Contenedor principal */
+.stress-info {
+    max-width: 1000px;
+    margin: 2rem auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Título principal */
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #a0007e; /* Color morado */
+    margin-bottom: 1rem;
+}
+
+/* Texto introductorio */
+.intro-text {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+/* Contenedor de las secciones */
+.sections-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+/* Sección */
+.section {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000000; /* Texto negro */
+    padding: 1.5rem;
+    border: 1px solid #a0007e; /* Borde morado */
+    border-radius: 12px;
+    width: 45%; /* Cada sección ocupa aproximadamente la mitad del ancho */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+
+
+/* Encabezado de la sección */
+.section-header {
+    background-color: #f8c61f; /* Fondo morado */
+    border: 1px solid #a18117; /* Añadido punto y coma al final */
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Contenido de la sección */
+.section-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.section-content li {
+    margin-bottom: 0.5rem;
+}
+
+
+.sections-wrapper {
+    background-color: rgba(255, 255, 255, 0.8); /* Un fondo blanco semitransparente para facilitar la lectura */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.stress-info {
+    position: relative;
+    padding: 20px;
+}
+
+.sections-wrapper {
+    position: relative;
+    padding: 20px;
+}
+
+.drawing1-image {
+    position: absolute;
+    bottom: 5px;
+    right: -250px;
+    width: 80px; /* Tamaño de la imagen */
+    height: auto;
+    pointer-events: none;
+}

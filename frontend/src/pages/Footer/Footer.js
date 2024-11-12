@@ -1,4 +1,5 @@
-import { Link, Routes } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
+
 import "./Footer.css"; // Importa el archivo CSS personalizado
 
 export default function Footer() {
